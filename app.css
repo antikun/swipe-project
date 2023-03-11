@@ -19,6 +19,7 @@
     --p-height: 26px;
     --secondary-text-size: 14px;
     --secondary-text-height: 18px;
+    --btn-size: 16px;
     /*Spacing */
     --spacing-sm: 8px;
     --spacing-md: 16px;
@@ -28,6 +29,7 @@
     --purple-1: #6962f7;
     --purple-2: #7000ff;
     --blue-1: #00d4ff;
+    --primary-btn-hover: #6d7a88;
     --primary-accent: #0a2540;
     --bg-white: #ffffff;
     --bg-light: #f7f9fc;
@@ -133,4 +135,54 @@ p {
     font-size: var(--secondary-text-size);
     line-height: var(--secondary-text-height);
     letter-spacing: 0.25px;
+}
+
+.primary-btn {
+    font-family: var(--main-font);
+    font-size: var(--btn-size);
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: var(--primary-accent);
+    border: none;
+    color: var(--text-light);
+    padding: var(--spacing-sm) var(--spacing-md);
+    transition: all 0.25s ease;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-btn-hover);
+    cursor: pointer;
+}
+
+.secondary-btn {
+    font-family: var(--main-font);
+    font-size: var(--btn-size);
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: var(--primary-accent);
+    border: none;
+    color: var(--primary-accent);
+    background-color: transparent;
+    transition: all 0.25s ease;
+}
+
+.secondary-btn:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.with-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.with-icon>img {
+    transition: transform 0.25s ease;
+}
+
+.with-icon:hover>img {
+    transform: translateX(4px)
 }
