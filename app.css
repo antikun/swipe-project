@@ -46,7 +46,7 @@ body {
     /* height: 100vh; */
     margin: 0;
     padding: var(--spacing-sm) 0 0;
-    background-color: var(--purple-1);
+    background-color: var(--bg-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,4 +295,20 @@ main {
     height: 628px;
     transform: translate(50px, -32px);
 
+}
+
+/* PARTNERS SECTION */
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    margin: var(--spacing-xl) 0;
+    column-gap: var(--spacing-md);
+    row-gap: var(--spacing-lg);
+}
+
+.partners-grid img {
+    height: 60px;
+    place-self: center;
 }
