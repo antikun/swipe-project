@@ -36,6 +36,8 @@
     --primary-accent: #0a2540;
     --bg-white: #ffffff;
     --bg-light: #f7f9fc;
+
+    --standard-box-shadow: 0px 2px 40px rgb(0, 0, 0, 0.15)
 }
 
 body {
@@ -66,12 +68,10 @@ h1 {
 
 h2 {
     font-family: var(--heading-font);
-    font-weight: 500;
-    font-size: var(--h2-size);
+    font-weight: 600;
+    font-size: var(--h3-size);
     margin: 0;
     width: 100%;
-    letter-spacing: -0.25px;
-    line-height: var(--h2-height);
 }
 
 h3 {
@@ -239,6 +239,7 @@ p {
     width: 100%;
     max-width: var(--standard-width);
     padding: 0 var(--spacing-md);
+    background-color: var(--purple-1);
 }
 
 .menu {
@@ -311,4 +312,60 @@ main {
 .partners-grid img {
     height: 60px;
     place-self: center;
+}
+
+/* UNIFIED PLATFORM SECTION */
+
+.unified-platform-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.unified-platform-section h2 {
+    width: 50%;
+    margin-bottom: var(--spacing-md);
+}
+
+.unified-platform-section .primary-btn {
+    background-color: var(--purple-1);
+    margin: var(--spacing-md) 0;
+}
+
+.unified-platform-section .primary-btn:hover {
+    background-color: var(--primary-accent);
+}
+
+/* GRAPHIC SECTION */
+
+.graphic-grid {
+    display: grid;
+    grid-template-areas:
+        "credit-card invoice invoice"
+        "phone invoice invoice"
+        "phone dash dash";
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) 0;
+}
+
+#credit-card {
+    grid-area: credit-card;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
+}
+
+#invoice {
+    grid-area: invoice;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
+}
+
+#phone {
+    grid-area: phone;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
+}
+
+#dash {
+    grid-area: dash;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
 }
