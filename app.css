@@ -782,3 +782,36 @@ p {
     color: var(--purple-1);
     text-decoration: underline;
 }
+
+/* SMALL SCREEN */
+
+@media only screen and (max-width: 1180px) {
+    .section-container {
+        padding: 0 var(--spacing-md);
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .partners-grid img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* TABLET SIZE */
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --h1-size: 64px;
+        --h1-height: 72px;
+        --h3-size: 34px;
+    }
+}
+
+/* MOBILE SIZE */
+
+@media only screen and (max-width: 550px) {
+    .partners-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
