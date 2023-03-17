@@ -36,6 +36,31 @@
         <button class="primary-btn navbar-btn">Sign in</button>
     </nav>
 
+    <nav class="mobile-navbar no-display">
+        <header class="mobile-nav-header">
+            <img src="./assets/logo-dark.svg" alt="Swipe, inc.">
+            <button class="hamburger-btn close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+        </header>
+
+        <ul class="menu">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+
+        <footer class="mobile-nav-footer">
+            <button class="primary-btn">Sign in</button>
+        </footer>
+    </nav>
+
     <main>
         <!-- GRADIENT BACKGROUND -->
         <canvas id="gradient-canvas"></canvas>
@@ -424,6 +449,14 @@
     </main>
 
     <script src="./gradient.js"></script>
+    <script>
+        document.querySelectorAll(".hamburger-btn").forEach(button => {
+            button.addEventListener("click", () => {
+                const mobileNav = document.querySelector(".mobile-navbar");
+                mobileNav.classList.toggle("no-display");
+            })
+        })
+    </script>
 </body>
 
 </html>

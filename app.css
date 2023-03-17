@@ -316,6 +316,10 @@ p {
     display: none;
 }
 
+.mobile-navbar.no-display {
+    display: none;
+}
+
 /* BACKGROUND GRADIENT */
 
 #gradient-canvas {
@@ -906,6 +910,82 @@ p {
         background-color: var(--bg-white);
     }
 
+    /* MOBILE NAVBAR */
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: var(--spacing-sm);
+        right: calc(var(--spacing-md) / 2);
+        background-color: var(--bg-white);
+        width: 400px;
+        max-height: 80vh;
+        padding: var(--spacing-sm) var(--spacing-md);
+        box-sizing: border-box;
+        border-radius: var(--standard-border-radius);
+        box-shadow: 0px 2px 40px rgb(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .mobile-navbar .mobile-nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-navbar .mobile-nav-header img {
+        width: 70px;
+        height: auto;
+        opacity: 0;
+    }
+
+    .mobile-navbar .mobile-nav-header .close-btn {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .mobile-navbar .mobile-nav-header .close-btn:hover {
+        cursor: pointer;
+    }
+
+    .mobile-navbar .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: var(--spacing-lg);
+    }
+
+    .mobile-navbar .menu a {
+        color: var(--text-dark);
+        font-weight: bold;
+        margin: 0;
+        font-size: var(--p-size);
+    }
+
+    .mobile-navbar .menu a:hover {
+        color: rgba(0, 0, 0, 0.4);
+        text-decoration: none;
+    }
+
+    .mobile-navbar .mobile-nav-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-navbar .mobile-nav-footer .primary-btn {
+        width: 136px;
+        background-color: var(--purple-1);
+        margin: var(--spacing-lg) 0 var(--spacing-md);
+    }
+
+    .mobile-navbar .mobile-nav-footer .primary-btn:hover {
+        background-color: var(--primary-accent);
+    }
+
     #gradient-canvas {
         height: 820px;
     }
@@ -1009,6 +1089,20 @@ p {
     .two-column .col-right {
         width: 100%;
         padding: 0;
+    }
+
+    .mobile-navbar {
+        top: var(--spacing-sm);
+        left: calc(var(--spacing-md) / 2);
+        background-color: var(--bg-white);
+        width: calc(100% - var(--spacing-md));
+        max-height: 80vh;
+    }
+
+    .mobile-navbar .mobile-nav-header img {
+        width: 70px;
+        height: auto;
+        opacity: 1;
     }
 
     main {
