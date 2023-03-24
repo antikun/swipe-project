@@ -21,5 +21,5 @@ I added a mobile navbar menu that was not included in the project originally, so
 
 ### Mobile
 
-<img src="/screenshots/swipe-hero-mobile.png" width="auto%" height="350px">     <img src="/screenshots/swipe-mobile-nav-menu.png" width="auto%" height="350px">     <img src="/screenshots/swipe-global-mobile.png" width="auto%" height="350px">
+<img src="/screenshots/Swipe-hero-mobile.png" width="auto%" height="350px">     <img src="/screenshots/swipe-mobile-nav-menu.png" width="auto%" height="350px">     <img src="/screenshots/swipe-global-mobile.png" width="auto%" height="350px">
 
