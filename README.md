@@ -17,9 +17,9 @@ I added a mobile navbar menu that was not included in the project originally, so
 
 #### Full Screen
 
-<img src="/screenshots/swipe-hero-full.png" width="auto" height="350px">  <img src="/screenshots/swipe-stripes.png" width="auto%" height="350px"> <img src="/screenshots/swipe-sessions.png" width="auto%" height="350px">
+<img src="/screenshots/Swipe-hero-full.png" width="auto" height="350px">  <img src="/screenshots/swipe-stripes.png" width="auto%" height="350px"> <img src="/screenshots/swipe-sessions.png" width="auto%" height="350px">
 
 ### Mobile
 
-<img src="/screenshots/Swipe-hero-mobile.png" width="auto%" height="350px">     <img src="/screenshots/swipe-mobile-nav-menu.png" width="auto%" height="350px">     <img src="/screenshots/swipe-global-mobile.png" width="auto%" height="350px">
+<img src="/screenshots/swipe-hero-mobile.png" width="auto%" height="350px">     <img src="/screenshots/swipe-mobile-nav-menu.png" width="auto%" height="350px">     <img src="/screenshots/swipe-global-mobile.png" width="auto%" height="350px">
 
